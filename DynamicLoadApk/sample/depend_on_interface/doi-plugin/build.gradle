@@ -33,9 +33,9 @@ android {
 }
 
 dependencies {
-    provided files('../../../lib/build/libs/lib.jar')
-    provided files('../doi-common/build/libs/doi-common.jar')
-    provided files('external-jars/android-support-v4.jar')
+    compile files('../../../lib/build/libs/lib.jar')
+    compile files('../doi-common/build/libs/doi-common.jar')
+    compile files('external-jars/android-support-v4.jar')
 }
 
 task beforeBuild(dependsOn: [':doi-common:buildLib', ':lib:buildLib']) {
